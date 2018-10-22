@@ -1,0 +1,14 @@
+*.pyc
+.idea
+
+# build files
+plugin/build
+
+# Project-specific
+csv/
+db
+Study Data/
+data_logs/session_*/*.csv
+data_logs/session_*/*.txt
+data_logs/session_*/*.mp4
+data_setup/*.csv
