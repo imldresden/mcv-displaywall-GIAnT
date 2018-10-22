@@ -1,6 +1,6 @@
 # GIANT for DiViCo
 
-The Group Interaction Analysis Toolkit (GIAnT) is a research tool that visualizes interactions of groups of people in front of a large interactive display wall. **Please note: This is a fork ([original GIAnT](https://github.com/imldresden/GIAnT)) that has been modified and extended to better fit the analysis requirements of the research project https://imld.de/mvc-displaywall ([prototype application](https://github.com/imldresden/mcv-displaywall)).** This version of GIAnT has been used in our publication:
+The Group Interaction Analysis Toolkit (GIAnT) is a research tool that visualizes interactions of groups of people in front of a large interactive display wall. **Please note: This is a fork ([original GIAnT](https://github.com/imldresden/GIAnT)) that has been modified and extended to better fit the analysis requirements of the research project https://imld.de/mcv-displaywall ([prototype application](https://github.com/imldresden/mcv-displaywall)).** This version of GIAnT has been used in our publication:
 
 > Ricardo Langner, Ulrike Kister and Raimund Dachselt, "Multiple Coordinated Views at Large Displays for Multiple Users: Empirical Findings on User Behavior, Movements, and Distances" in IEEE
 Transactions on Visualization and Computer Graphics, vol. 25, no. 1, 2018.
