@@ -47,15 +47,20 @@ def create_session(session_number):
     current_dir = os.getcwd()
     os.chdir("{}{}".format(input_video_dir, session_number))
     filenames = glob.glob(input_video_prefix + str(session_number) + "_video*.mp4")
-    if len(filenames) < 1:
-        print "ERROR: cannot find video file for session " + str(session_number) + "."
+
+    if len(filenames) < 1 and len(video_timestamps) < 1:
+        print "ERROR: cannot find video files or the config variables for the session " + str(session_number) + "."
         assert False
-    print "video file for session " + str(session_number) + ":", filenames[0]
+    if len(filenames) > 0:
+        print "video file for session " + str(session_number) + ":", filenames[0]
     video_filenames = ["{}{}/{}".format(input_video_dir, session_number, fn) for fn in filenames]
+
     os.chdir(current_dir)
 
     video_start_times = []
     date = None
+
+    video_filenames = video_filenames if len(video_filenames) > 0 else video_timestamps.keys()
     for video_filename in video_filenames:
         possible_timestamps = [ts for fn, ts in video_timestamps.iteritems() if fn in video_filename]
         if len(possible_timestamps) > 0:
